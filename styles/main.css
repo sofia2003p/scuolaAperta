@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr minmax(400px, 1600px) 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "nav nav nav"
+    ". main ."
+    "foot foot foot";
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer {
+  grid-area: foot;
+  justify-self: center;
+}
