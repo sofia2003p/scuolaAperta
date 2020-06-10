@@ -16,7 +16,35 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 70%;
+      }
+      main{
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ".cuerpo.";
+      }
+      #cuerpo{
+        grid-area: cuerpo;
+      }
+      #tabla{
+        background-color: white;
+            color: #202124;
+            border: 1px solid #f1f3f4;
+            border-radius: 50px;
+            text-align: center;
+            align-self: center;
+            align-content: center;
+            max-height: 100%;
+            margin: 50px;
+        }
+      #encabezado{
+        background-color:#f1f3f4;
+      }  
+      #titulo{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
       }
     </style>
   </head>
@@ -88,7 +116,8 @@
       </div>
     </nav>
     <main>
-      <h1 style="color:darkgreen;">Nutrición deportiva</h1>
+      <div id="cuerpo">
+      <h1 style="color:darkgreen;"><font size=500px><div id="titulo">Nutrición deportiva</div> </font></h1>
       <p>El rendimiento deportivo está condicionado 
         por un conjunto de factores que incluyen no solamente 
         el entrenamiento diario. Además de éste son importantes 
@@ -101,13 +130,13 @@
       <h2 style="color: forestgreen;">¿Por qué es importante la alimentación en un deportista?</h2>
       <p>Al realizar ejercicio físico, se quema mucha más energía de manera mucho más concentrada y veloz 
         por tal razón es necesario ingerir una cantidad más alta de 
-        <a href="https://www.grupogamma.com/nutrientes-que-son-donde-estan-para-que-sirven/" style="color: green;"><i>nutrientes</i> </a>  generando una demanda.
+        <a href="https://www.grupogamma.com/nutrientes-que-son-donde-estan-para-que-sirven/" style="color: green;">nutrientes</a>  generando una demanda.
         Esta demanda puede ser cubierta de dos maneras:
         <ul>
-          <li>Con ayuda de las reservas de <a href="https://www.grupogamma.com/nutrientes-que-son-donde-estan-para-que-sirven/" style="color: green;"><i>nutrientes</i> </a> que han sido 
+          <li>Con ayuda de las reservas de <a href="https://www.grupogamma.com/nutrientes-que-son-donde-estan-para-que-sirven/" style="color: green;">nutrientes</a> que han sido 
             almacenados gracias a ingestas anteriores.
           </li>
-          <li>Obteniendo <a href="https://www.grupogamma.com/nutrientes-que-son-donde-estan-para-que-sirven/" style="color: green;"><i>nutrientes</i> </a> de manera inmediata.
+          <li>Obteniendo <a href="https://www.grupogamma.com/nutrientes-que-son-donde-estan-para-que-sirven/" style="color: green;">nutrientes</a> de manera inmediata.
           </li>
         </ul>
        <p>De acuerdo a lo dicho anteriormente nuestro cuerpo tiene la capacidad
@@ -116,22 +145,133 @@
         y esta energía no depende de la cantidad que sea ingerida, sino del tipo y de la 
         manera en la que sean introducidas en el organismo. Esta energía viene alamacenada 
         en grasa (lípidos) o en el <a href="https://es.wikipedia.org/wiki/Gluc%C3%B3geno" style="color: green;">glucógeno</a>
-        hepático cuantificandose en <a href="https://es.wikipedia.org/wiki/Kilocalor%C3%ADa">kilocalorías</a>. Es así como el cuerpo
-        funciona como un motor de combustión interna...
+        hepático cuantificandose en <a href="https://es.wikipedia.org/wiki/Kilocalor%C3%ADa" style="color: green;">kilocalorías</a>. Es así como el cuerpo
+        funciona como un motor de combustión interna. De esta manera el cuerpo logra proveer de fuerzas al deportista para realizar su actividad.
       </p>
-      <table>
-        <td>
-          <tr>
-            
+      <h3 style="color: forestgreen;">Pero...¿cómo garantizar que la energía sea adecuada y suficiente?</h3>
+      <p>Para saberlo hay que ingerir los siguientes macronutrientes siguiendo tres principios fundamentales: variedad (consumir diferentes alimentos podría generar mayor ingesta de macronutrientes), 
+        moderación (evitar los excesos) y equilibrio (responder de manera adecuada a las necesidades del cuerpo dependiendo del momento).</p>
+      <p>Los macronutrientes (mostrados en la siguiente tabla) aportan energía y soporte estructural.</p> 
+      <table id="tabla" class="table-bordered">
+        <thead id="encabezado">
+          <tr style="color: green;">
+            <th >Macronutriente
+            </th>
+            <th>Densidad Enérgica
+            </th>
+            <th>Funciones Básicas en el organismo
+            </th>
+            <th>Ingesta Individual
+            </th>
           </tr>
-        </td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hidratos de carbono o carbohidratos</td>
+            <td><ul>
+            <li>4 kcal/g</li>  
+            <li>Densidad energpetica 17,6 kJ/g</li>
+            </ul>
+            </td>
+            <td> 
+              <ul>
+                <li>Son la principal fuente de energía,
+                  representan  del 50-60% del aporte energético total
+                </li>
+                <li>Energía empleada en los músculos.
+                </li>
+                <li>Las fuentes principales son: cereales,
+                  y sus derivados, la patata, el pan y las frutas.
+                </li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+              <li>Ejercicio de 1h al día, la dieta deberá 
+              aportar entre 5-7g/kg peso corporal/día.</li> 
+              <li>Ejercicio de 1-3h al día con una intensidad moderada-alta, la dieta deberá 
+                aportar entre 7-12g/kg peso corporal/día.</li>
+              <li>Ejercicio extremo con una intensidad moderada-alta (>4-5h), la dieta deberá 
+                aportar entre 10-12g/kg peso corporal/día.</li>  
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Proteínas</td>
+            <td>4 kcal/g</td>
+            <td>
+              <ul>
+                <li>Energía empleada en los músculos en forma de combustible, Además
+                  de que son esenciales para el mantenimiento,reparación y generación 
+                  de nuevos tejidos.
+                </li>
+                <li>Reparto de los 
+                  <a href="https://www.bbc.com/mundo/noticias-48038253" style="color: green;" >amonoácidos esenciales</a> 
+                  ,es decir, aquellos que el organismo no es capaz de sintetizar.
+                </li>
+                <li>Las fuentes principales son: los huevos, la carne, el pescado,
+                  la leche y sus derivados. También pueden ser consideradas las
+                  legumbres, los frutos secos y los derivados de la soya.
+                </li>
+                <li>Deberán aportar del 10-25% del aporte energético total diario.
+                </li>
+                <li>Son encargadas de transportar micronutrientes en el torrente senguíneo.</li>
+              <li>Garantizan una buena recuperación muscular</li>
+              </ul>
+            </td>
+            <td>En este caso la ingesta de proteínas depende de muchos más factores, sin embargo hay manera de subdividirla:
+              <ul>
+              <li>Para los deportista de rendimiento, es decir, aquellos que realizan trabajos de largas 
+                distancias, se recomienda entre 1,2 a 1,4 g/Kg peso corporal/día.</li> 
+              <li>Para los deportistas de potencia, es decir, aquellos que realizan una gran fuerza en intervalos de tiempo reducidos, se recomienda
+                entre 1,2 a 2 g/Kg peso corporal/día. 
+              </li>
+              <li>Ejercicio extremo con una intensidad moderada-alta (>4-5h), la dieta deberá 
+                aportar entre 10-12g/kg peso corporal/día.</li>  
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Grasas o triglicéridos</td>
+            <td> <ul>
+             <li>9,4 kcal/g</li> 
+           <li>Densidad energética de 39,3 kJ/g</li>
+          </ul>
+          </td>
+            <td>
+              <ul>
+                <li>Energía empleada en los músculos en forma de combustible, Además
+                  de que son esenciales para el mantenimiento,reparación y generación 
+                  de nuevos tejidos.</li>
+                <li>Transporta a las <a href="https://healthia.es/blog/nutricion-deportiva/vitaminas-para-deportistas/" style="color: green;">vitaminas</a> solubles en grasas
+                </li>
+                <li>Reparto de los <a href="https://www.bbc.com/mundo/noticias-48038253" style="color: green;" >amonoácidos esenciales</a> 
+                  ,es decir, aquellos que el organismo no es capaz de sintetizar.
+                </li>
+                <li>Es un ingrediente lleno de <a href="https://www.marie-claire.es/belleza/fitness/fotos/5-hormonas-que-regulan-la-quema-de-grasas/leptina" style="color: green;">hormonas</a>
+                </li>
+                <li>Es importante ingerir mayormente grasas <a href="https://www.goredforwomen.org/es/healthy-living/healthy-eating/eat-smart/fats/monounsaturated-fats" style="color: green;">monoinsaturas y polinsaturas</a> por su poder antiinflamatorio y de prevención cardiovascular.
+                </li>
+                <li>Puedes encontrar estas grasas en: frutos secos, nueces, pescado azul, aceite de oliva, aguacate, semillas de calabaza, girasol y lino</li>
+                <li>Deberán aportar del 10-25% del aporte energético total diario.</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+              <li>La ingesta de las grasas debe ser mínima en todos los deportistas, tanto en hombres como en mujeres</li>  
+            </ul>
+            </td>
+          </tr>
+        </tbody>
       </table>
+     </div>
     </main>
-    <footer>
+    <footer> <div id="cuerpo">
       <h4 style="font-size: small; color: green;">Bibliografía</h4>
       <h5 style="font-size: small; color: black;"> <a href="https://www.alimmenta.com/diferencias-la-alimentacion-mujeres-hombres-deportistas/">diferencias-la-alimentacion-mujeres-hombres-deportistas</a></h5>
       <h6 style="font-size: small; color: black;"><a href="https://nomen.es/importancia-de-la-alimentacion-en-el-deporte/">importancia-de-la-alimentacion-en-el-deporte</a></h6>
       <h6 style="font-size: small;color: black;"><a href="https://www.elsevier.es/es-revista-offarm-4-articulo-la-nutricion-el-deporte-13053127">artículo-la-nutrición-el-deporte</a></h6>
+    </div>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
